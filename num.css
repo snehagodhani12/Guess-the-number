@@ -1,0 +1,146 @@
+
+ /* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    background: url('bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Georgia', serif;
+    color: white;
+}
+
+/* Game Container Styling */
+.game-container {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    padding: 2rem;
+    text-align: center;
+    width: 90%;
+    max-width: 450px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Title */
+.game-container h1 {
+    font-size: 2.5rem;
+    color: #f1d358;
+    margin-bottom: 1rem;
+}
+
+/* Instructions */
+.game-container p {
+    font-size: 1.2rem;
+    color: #e5e5e5;
+    margin-bottom: 1rem;
+}
+
+/* Input Styling */
+input {
+    padding: 12px;
+    font-size: 1.1rem;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    width: 70%;
+    max-width: 250px;
+    margin-bottom: 1rem;
+}
+
+/* Button Styling */
+button {
+    padding: 12px 24px;
+    background-color: #8a3f1c;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #d77f4e;
+    color: #1d1d1d;
+    border: 1px solid #fff;
+}
+
+/* Feedback Text */
+#feedback {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    color: #ffcc00;
+}
+
+/* Attempts Count */
+#attempts {
+    font-size: 1.4rem;
+    color: #f1d358;
+    margin-top: 1rem;
+}
+
+/* Reset Button Styling */
+#reset {
+    background-color: #5f2926;
+    display: none;
+    margin-top: 20px;
+}
+
+#reset:hover {
+    background-color: #da190b;
+}
+
+/* Responsive Design for Tablets and Below */
+@media (max-width: 768px) {
+    .game-container {
+        padding: 1.5rem;
+    }
+
+    .game-container h1 {
+        font-size: 2rem;
+    }
+
+    .game-container p, input, button, #feedback, #attempts {
+        font-size: 1.2rem;
+    }
+
+    input {
+        width: 80%;
+    }
+}
+
+/* Responsive Design for Mobile Phones */
+@media (max-width: 480px) {
+    .game-container {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    .game-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .game-container p, input, button, #feedback, #attempts {
+        font-size: 1rem;
+    }
+
+    input {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
